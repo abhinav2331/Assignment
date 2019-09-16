@@ -1,0 +1,159 @@
+@import "variables.scss";
+@font-face {
+    font-family: 'Monda-Bold';
+    src: url('./font/Monda-Bold.eot');
+    src: url('./font/Monda-Bold.eot?#iefix') format('embedded-opentype'), url('./font/Monda-Bold.ttf') format('truetype'), url('./font/Monda-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monda-Regular';
+    src: url('./font/Monda-Regular.eot');
+    src: url('./font/Monda-Regular.eot?#iefix') format('embedded-opentype'), url('./font/Monda-Regular.ttf') format('truetype'), url('./font/Monda-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: $text_lite !important;
+    font-family: 'Monda-Regular';
+    
+}
+
+a, a:hover {
+    text-decoration: none !important;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.container {
+    width: 100% !important;
+    max-width: 1140px !important;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 25px;
+}
+
+.for_bor {
+    border-bottom: 2px solid #cccccc;
+    padding: 15px 0;
+}
+
+.btns {
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: $text_lite;
+    border: 0;
+}
+
+.btns:hover {
+    color: $text_lite;
+}
+
+.label_btn_green {
+    background-color: $color_green;
+}
+
+.label_btn_blue {
+    background-color: $color_blue;
+    position: relative;
+}
+
+.btn_blue_border {
+    background-color: $text_lite;
+    color: $color_blue !important;
+    border: 1px solid $color_blue !important;
+    position: relative;
+    font-size:14px;
+
+    &:hover {
+        background-color: $color_blue;
+        color: $text_lite !important;
+    }
+}
+.card{
+    padding:15px;
+}
+
+.badger {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    border-radius: 50%;
+    background-color: $text_lite;
+    color: #000000;
+    text-align: center;
+    border:1px solid #cccccc;
+}
+
+.products {
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    ul {
+        list-style-type: none;
+
+        li {
+            display: inline-block;
+            margin: 0 20px 20px 0;
+            background-color: $text_lite;
+            border: 1px solid #cccccc;
+            width: 262px;
+            position:relative;
+
+            .pro_footer {
+                background-color: $color_gray;
+                padding: 10px;
+                margin-top: 20px;
+            }
+
+            .discount {
+                position: absolute;
+                top: 50px;
+                left: 0;
+                background-color: $color_green;
+                color: $text_lite;
+                padding: 3px 5px;
+            }
+        }
+
+        li:nth-child(4n) {
+            margin-right: 0px;
+        }
+    }
+}
+
+.pro_title {
+    font-weight: bold;
+}
+
+.old_price {
+    text-decoration: line-through;
+    color: #ff0000;
+}
+
+.pro_image {
+    width: 100px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.pro_image {
+    overflow: hidden;
+}
